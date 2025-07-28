@@ -9,4 +9,4 @@ elif unit.lower()=="lb":
     print(f"Your weight in kilograms is {converted_weight:.2f} kg")
 
 else:
-    print("Invalid unit. Please enter 'kg' or 'lb'.")
+    print("Invalid unit. Please enter 'kg' or 'lb' (case insensitive).")
