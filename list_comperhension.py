@@ -8,6 +8,12 @@
 # fruits=["apple","banana","orange"]
 # fruits=[x.upper() for x in fruits]
 # print(fruits)
-fruits=["apple","banana","orange"]
-fruits_list=[x[0] for x in fruits]
-print(fruits_list)
+# fruits=["apple","banana","orange"]
+# fruits_list=[x[0] for x in fruits]
+# print(fruits_list)
+
+number=[1,2,3,-5,-7,8]
+positive = [num for num in number if num >0]
+negative= [num for num in number if num <0]
+print(negative)
+print(positive)
