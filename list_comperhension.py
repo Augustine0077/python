@@ -12,8 +12,11 @@
 # fruits_list=[x[0] for x in fruits]
 # print(fruits_list)
 
-number=[1,2,3,-5,-7,8]
-positive = [num for num in number if num >0]
-negative= [num for num in number if num <0]
-print(negative)
-print(positive)
+# number=[1,2,3,-5,-7,8]
+# positive = [num for num in number if num >0]
+# negative= [num for num in number if num <0]
+# print(negative)
+# print(positive)
+grades = [11,20,60,65,70,44,50,32]
+passed = [grade for grade in grades if grade >= 50]
+print(passed)
