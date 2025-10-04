@@ -17,6 +17,8 @@
 # negative= [num for num in number if num <0]
 # print(negative)
 # print(positive)
+from passed import passed
+
+
 grades = [11,20,60,65,70,44,50,32]
-passed = [grade for grade in grades if grade >= 50]
 print(passed)
