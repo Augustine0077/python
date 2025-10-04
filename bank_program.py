@@ -13,6 +13,11 @@ def withdraw():
 
     if amount > balance:
         print("Insufficent fund")
+        return 0
+    elif amount < 0:
+        print("Amount must be grater than 0")
+    else :
+        return amount
 
 balance = 0
 is_running = True
