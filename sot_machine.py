@@ -23,3 +23,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+    choice = input("Choose an option between 1-4:   ")
+    if choice == '1':
+        show_balance()
+    elif choice == '2':
+    balance += deposit()
+    elif choice == '3':
+        balance -= withdraw()
+    elif choice == '4':
+        is_running = False
+    else:
+        print("Invalid option, please choose a number between 1-4.")
+print("Thank you for using the bank program. Goodbye!")
+
