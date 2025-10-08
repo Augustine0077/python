@@ -5,6 +5,6 @@ class Car:
         self.year = year
         self.for_sale = for_sale
     def drive(self):
-        print("The car is driving.")
+        print(f"The car is driving {self.make} {self.model}.")
     def stop(self):
-        print("The car has stopped.")
+        print(f"The car {self.make} {self.model} has stopped.")
