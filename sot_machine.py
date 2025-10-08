@@ -1,11 +1,10 @@
 import random
 def spin_row():
-    symbols  =["1--2--3--4--5"]
-    result = []
-    for symbol in range(3):
-        result.append(random.choice(symbols))
+    symbols  =["1", "2", "3", "4", "5"]
+    result = [ random.choice(symbols) for _ in range(3)]
+    
 def print_row():
-    pass
+    pritn(" | ".join(row))
 
 def get_payout():
     pass
@@ -34,5 +33,6 @@ def main():
         balance -= bet
 
         row  = spin_row()
+        print_row(row)
 if __name__ == "__main__":
     main()
