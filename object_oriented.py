@@ -4,3 +4,7 @@ print(Car1.make)
 print(Car1.model)
 print(Car1.year)
 print(Car1.for_sale)
+
+
+Car1.drive()
+Car1.stop()
