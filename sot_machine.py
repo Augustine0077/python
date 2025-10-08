@@ -1,6 +1,9 @@
+import random
 def spin_row():
-    pass
-
+    symbols  =["1--2--3--4--5"]
+    result = []
+    for symbol in range(3):
+        result.append(random.choice(symbols))
 def print_row():
     pass
 
@@ -17,10 +20,19 @@ def main():
 
     while balance > 0:
         print(f"your current balance is {balance}")
-        bet = input("Enter a bet amount : ")
+        bet = (input("Enter a bet amount : "))
         if not bet.isdigit():
             print("Please enter a valid number")
             continue
+        bet = int(bet)
+        if bet > balance:
+            print("Insufficient balance")
+            continue
+        if bet <=0:
+            print("Bet must be greater than zero")
+            continue    
+        balance -= bet
 
+        row  = spin_row()
 if __name__ == "__main__":
     main()
