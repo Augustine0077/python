@@ -15,7 +15,7 @@ def get_payout(row, bet):
     if row[0] == row[1] == row[2]:
         print("Jackpot! You win 10 times your bet!")
         return bet * 10
-    if row[0] == row[1] or row[1] == row[2] or row[0] == row[2]:
+    if row[0] == row[1] or row[1] == row[2] or row[0] == rowq[2]:
         print("You win 3 times your bet!")
         return bet * 3
     print("No win this time. Try again!")
