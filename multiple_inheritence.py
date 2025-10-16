@@ -1,16 +1,18 @@
 class Animal:
+    def __init__(self,name):
+        self.name = name
     def eat(self):
-        print("This Animal can eat")
+        print(f"{self.name} can eat")
     def sleep(self):
-        print("This animal can sleep")
+        print(f"{self.name} can sleep")
 class Pray(Animal):
     def flee(self):
-        print("This animal is fleeing")
+        print(f"{self.name} is fleeing")
 
 class Predator(Animal):
     def hunt(self):
-        print("This animal is hunting")
-        
+        print(f"{self.name} is hunting")
+
 
 class Rabbit(Pray):
     pass
@@ -21,16 +23,13 @@ class Hawk(Predator):
 class Fish(Pray, Predator):
     pass
 
-rabbit = Rabbit()
-hawk = Hawk()
-fish = Fish()
+rabbit = Rabbit("Chinden")
+hawk = Hawk("kurnari")
+fish = Fish("Nemo")
 
 # call on instances (correct)
 rabbit.flee()
 hawk.hunt()
-fish.flee()
 fish.hunt()
-rabbit.eat()  # This will raise an AttributeError since Rabbit does not inherit from Animal
-rabbit.sleep()  # This will raise an AttributeError since Rabbit does not inherit from Animal
-fish.eat()  # This will raise an AttributeError since Fish does not inherit from Animal
-fish.sleep()  # This will raise an AttributeError since Fish does not inherit from Animal
+fish.flee()
+print(fish.name)
