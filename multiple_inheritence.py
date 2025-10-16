@@ -3,12 +3,25 @@ class Pray:
         print("This animal is fleeing")
 
 class Predator:
+    def hunt(self):
+        print("This animal is hunting")
+        
+
+class Rabbit(Pray):
     pass
 
-class Rabbit:
+class Hawk(Predator):
     pass
 
-class Hawk:
+class Fish(Pray, Predator):
     pass
 
-class Fish:
+rabbit = Rabbit()
+hawk = Hawk()
+fish = Fish()
+
+# call on instances (correct)
+rabbit.flee()
+hawk.hunt()
+fish.flee()
+fish.hunt()
