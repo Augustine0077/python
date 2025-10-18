@@ -8,17 +8,26 @@ class Circle(Shape):
     def __init__(self, colour, radius, is_filled):
         super().__init__(colour, is_filled)
         self.radius = radius
-        
+    def describe(self):
+        super().describe()
+        print(f"it has a radius of {3.14 * self.radius**2}")
+
 class Square(Shape):
     def __init__(self, colour, width, is_filled):
         super().__init__(colour, is_filled)
         self.width = width
-        
+    def describe(self):
+        super().describe()
+        print(f"it has a width of {self.width * self.width}")
+
 class Triangle(Shape):
     def __init__(self, colour, width, height, is_filled):
         super().__init__(colour, is_filled)
         self.width = width
         self.height = height
+    def describe(self):
+        super().describe()
+        print(f"it has a width of {self.width * self.height / 2}")
 
 circle = Circle("Red", 5, True)
 square = Square("Blue", 4, False)
