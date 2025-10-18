@@ -1,3 +1,7 @@
+class Shape:
+    def __init__(self,colour,is_filled):
+        self.colour = colour
+        self.is_filled = is_filled
 class Circle:
     def __init__(self,colour,radius,is_filled):
         self.colour = colour 
