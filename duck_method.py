@@ -10,6 +10,7 @@ class Cat(Animal):
         print("meow")
 
 class Car:
+    alive  =  False
     def speak(self):
         print("Honk")
 
@@ -17,4 +18,4 @@ animals = [Dog(),Cat(),Car()]
 
 for animal in animals:
     animal.speak()
-    
+    print(f"Is alive: {animal.alive}")
