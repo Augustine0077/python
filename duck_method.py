@@ -19,3 +19,5 @@ animals = [Dog(),Cat(),Car()]
 for animal in animals:
     animal.speak()
     print(f"Is alive: {animal.alive}")
+
+#this is duck typing in python
