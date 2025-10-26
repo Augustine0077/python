@@ -4,6 +4,10 @@
 # else:
 #     print(f"{num2} is gratest")
 
-num1 =12
-num2 = 10
-print((num1 if num1 > num2 else num2))
+# num1 =12
+# num2 = 10
+# print((num1 if num1 > num2 else num2))
+
+num1 =10
+num2 = 12
+print(max(num1 , num2))
