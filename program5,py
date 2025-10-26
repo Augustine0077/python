@@ -1,5 +1,9 @@
-num1,num2 = map(int,(input("enter 2 number seprated by space : ")).split())
-if num1 >  num2:
-    print(f"{num1} is gratest")
-else:
-    print(f"{num2} is gratest")
+# num1,num2 = map(int,(input("enter 2 number seprated by space : ")).split())
+# if num1 >  num2:
+#     print(f"{num1} is gratest")
+# else:
+#     print(f"{num2} is gratest")
+
+num1 =12
+num2 = 10
+print((num1 if num1 > num2 else num2))
