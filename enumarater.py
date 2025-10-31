@@ -7,3 +7,4 @@ backbag = ['box','book','scale','pencil','pen']
 for i, value in enumerate(backbag):
 
     print(i, value)
+# easy way to get index and value
