@@ -10,9 +10,14 @@
 
 
 
+# list = [1,2,3,4,5,6,7,8,9]
+
+# lam = lambda x: x* 2
+
+# for i in map(lam,list):
+#     print(i)
+
+
 list = [1,2,3,4,5,6,7,8,9]
-
-lam = lambda x: x* 2
-
-for i in map(lam,list):
-    print(i)
+for i in map(lambda x: x*2,list):
+        print(i)
