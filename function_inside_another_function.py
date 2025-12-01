@@ -40,7 +40,6 @@ def first_decorator(func):
     def wrapper():
         print("This is the first decorator")
         func()
-        func()
     return wrapper
 
 
@@ -48,7 +47,7 @@ def second_decorator(func):
     def wrapper():
         print("this is second decorator")
         func()
-        func()
+    
     return wrapper
 @first_decorator
 @second_decorator
